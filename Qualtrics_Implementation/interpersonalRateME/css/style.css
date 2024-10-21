@@ -1,0 +1,390 @@
+.table-screen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 110vh;
+    width: 80vw;
+}
+
+.table-background {
+    background: linear-gradient(45deg,rgb(76, 77, 73), rgb(39, 39, 39));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 80vw;
+}
+
+.table-instructions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 80vw;
+}
+
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    width: 95%;
+}
+
+
+.row-chairs {
+    height: 33%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mid-row {
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row-block {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.space {
+    width: 15%;
+}
+
+
+.mid-block {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid-table {
+    height: 85%;
+    width: 55%;
+    background: radial-gradient(#572863, #5e002f);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: outset;
+}
+
+
+.chair {
+    height: 100%;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.flagContainer {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag {
+    height: 90% !important;
+    width: 80%;
+    box-shadow: 0 5px #2c2c2c;
+}
+
+
+.nameContainer {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    font-family: "Helvetica, Arial";
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.rateContainer {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+}
+
+.rating {
+    position: relative;
+    width: 10em;
+    height: 80%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #dad434;
+}
+
+.rating__star {
+    font-size: 18px;
+    cursor: pointer;
+    color: #dad434;
+    transition: filter linear .3s;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-text-container {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtext-container {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-text {
+    font-family: "Georgia";
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.subtext {
+    font-family: "Noto Serif", "Times New Roman";
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: -0.5rem;
+}
+
+
+.rating-room {
+    background: linear-gradient(45deg,rgb(76, 77, 73), rgb(39, 39, 39)) fixed;
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nameSection {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileSection {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratingSection {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.questionContainer {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ratingsContainer {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.questionContainer {
+    width: 16.6%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botNameContainer {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileAvatarContainer {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileContainer {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.profileAvatar {
+    height: 100% !important;
+}
+
+.profileText {
+    font-family: "Georgia";
+    font-size: 26px;
+    color: white;
+    text-align: left;
+    line-height: 150%;
+}
+
+.textContainer {
+    height: 60%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionText {
+    font-family: "Helvetica, Arial";
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    color: black;
+}
+
+
+.instructionsSection {
+    background: linear-gradient(45deg,rgb(76, 77, 73), rgb(39, 39, 39)) fixed;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.instructionsContainer {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.instructions {
+    top: 0rem;
+}
+
+.example {
+    font-size: 36px;
+    cursor: pointer;
+    color: #dad434;
+    transition: filter linear .3s;
+    width: 25%;
+    height: 17%;
+    top: 1rem;
+}
+
+.space_instructions {
+    height: 5%;
+}
+
+
+.avatarsSection {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1em;
+}
+
+.avatarContainer {
+    width: 16%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    height: 90% !important;
+}
+
+
+.progressContainer {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress {
+    height: 20%;
+    width: 100%;
+    background-color: #E6E6E6;
+    border-radius: 10px;
+}
+
+.bar {
+    width: 1%;
+    height: 100%;
+    background: radial-gradient(#572863, #5e002f);
+    border-radius: 10px;
+}
