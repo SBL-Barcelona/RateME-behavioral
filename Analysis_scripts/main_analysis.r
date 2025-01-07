@@ -19,7 +19,7 @@ for (cond in personal_condition) {
 
     data_pers <- filter(data, condition == cond)
 
-    fit <- lm(bscmMean ~ group + factor(gender) + age,
+    fit <- lm(bscmMean ~ group,
         data = data_pers, na.action = na.omit)
     sum <- summary(fit)
 
@@ -44,7 +44,7 @@ for (cond in personal_condition) {
 ## Needs Satisfaction Political
 
 data_political <- filter(data, condition == "political")
-fit <- lm(bscmMean ~ group * IF_UkMe + factor(gender) + age,
+fit <- lm(bscmMean ~ group * IF_UkMe,
     data = data_political, na.action = na.omit)
 sum <- summary(fit)
 
@@ -62,7 +62,7 @@ plot_political_bscm(data_political)
 
 ### Needs Satisfaction Whole Sample
 
-fit <- lm(bscmMean ~ group * condition + factor(gender) + age,
+fit <- lm(bscmMean ~ group * condition,
     data = data, na.action = na.omit)
 sum <- summary(fit)
 
@@ -93,7 +93,7 @@ bscm_vars <- c("bscmControl", "bscmSelfEsteem",
 for (depVar in bscm_vars) {
 
     form <- paste(depVar, "~",
-        "group * condition + gender + age")
+        "group * condition")
     fit <- lm(form, data = data, na.action = na.omit)
     sum <- summary(fit)
 
@@ -124,7 +124,7 @@ for (cond in personal_condition) {
 
     data_pers <- filter(data, condition == cond)
 
-    fit <- glm(shosMedian ~ group + gender + age, data = data_pers,
+    fit <- glm(shosMedian ~ group, data = data_pers,
         na.action = na.omit, family = "poisson")
     sum <- summary(fit)
 
@@ -146,7 +146,7 @@ for (cond in personal_condition) {
 
 ### State Hostility Political
 
-fit <- glm(round(shosMedian) ~ group + gender + age, data = data_political,
+fit <- glm(round(shosMedian) ~ group, data = data_political,
     na.action = na.omit, family = "poisson")
 sum <- summary(fit)
 
@@ -162,7 +162,7 @@ plot_political_shos(data_political)
 
 ## State Hostility Whole
 
-fit <- glm(round(shosMedian) ~ group * condition + gender + age, data = data,
+fit <- glm(round(shosMedian) ~ group * condition, data = data,
     na.action = na.omit, family = "poisson")
 
 pairs(contrast(emmeans(fit, ~group | condition),
@@ -189,7 +189,7 @@ shos_vars <- c("shosEmotion", "shosAction")
 for (depVar in shos_vars) {
 
     form <- paste(depVar, "~",
-        "group * condition + gender + age")
+        "group * condition")
     fit <- glm(form, data = data, na.action = na.omit, family = "poisson")
     sum <- summary(fit)
 
